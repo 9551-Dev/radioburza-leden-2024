@@ -1,0 +1,21 @@
+name: GitHub Pages
+on:
+  push:
+    branches:
+    - master
+jobs:
+  build:
+    name: Build page
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run python script
+      run: |
+        python3 ./main.py
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        force_orphan: true
+        commit_message: Build for

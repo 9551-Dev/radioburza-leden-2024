@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{css_path}}">
+</head>
+<body>
+    <div class="header-box">
+        <h1>{{title}}</h1>
+        <button class="dark-mode-btn" onclick="toggle_dark_mode()">Toggle Dark Mode</button>
+    </div>
+    <div class="content">
+        <div class="gallery">
+            {{image_tags}}
+        </div>
+
+        <div class="image-viewer" onclick="close_image_viewer()">
+            <span class="close-btn" onclick="close_image_viewer()">&times;</span>
+            <img id="viewer-image" class="viewed-image" src="" alt="Viewer Image" onclick="zoom_image(event)">
+            <div class="nav-arrows">
+                <div class="nav-arrow nav-arrow-left" onclick="navigate_image(event, -1)">&#8249;</div>
+                <div class="nav-arrow nav-arrow-right" onclick="navigate_image(event, 1)">&#8250;</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{js_path}}"></script>
+</body>
+
+<div class="github-link">
+    <a href="https://github.com/9551-Dev">
+    <img src="https://github.com/9551-Dev.png" alt="github icon">
+    </a>
+</div>
+
+</html>
