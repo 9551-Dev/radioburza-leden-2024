@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radioburza Leden 2024</title>
+    <link rel="stylesheet" href="core/style.css">
+</head>
+<body>
+    <div class="header-box">
+        <h1>Radioburza Leden 2024</h1>
+        <button class="dark-mode-btn" onclick="toggle_dark_mode()">Toggle Dark Mode</button>
+    </div>
+    <div class="content">
+        <div class="gallery">
+                    <img src="images/IMG_0531.JPG" alt="IMG_0531.JPG"" onclick='open_image_viewer("images/IMG_0531.JPG")'>
+        <img src="images/IMG_0532.JPG" alt="IMG_0532.JPG"" onclick='open_image_viewer("images/IMG_0532.JPG")'>
+        <img src="images/IMG_0533.JPG" alt="IMG_0533.JPG"" onclick='open_image_viewer("images/IMG_0533.JPG")'>
+        <img src="images/IMG_0534.JPG" alt="IMG_0534.JPG"" onclick='open_image_viewer("images/IMG_0534.JPG")'>
+        <img src="images/IMG_0535.JPG" alt="IMG_0535.JPG"" onclick='open_image_viewer("images/IMG_0535.JPG")'>
+        <img src="images/IMG_0537.JPG" alt="IMG_0537.JPG"" onclick='open_image_viewer("images/IMG_0537.JPG")'>
+        <img src="images/IMG_0538.JPG" alt="IMG_0538.JPG"" onclick='open_image_viewer("images/IMG_0538.JPG")'>
+        <img src="images/IMG_0539.JPG" alt="IMG_0539.JPG"" onclick='open_image_viewer("images/IMG_0539.JPG")'>
+        <img src="images/IMG_0540.JPG" alt="IMG_0540.JPG"" onclick='open_image_viewer("images/IMG_0540.JPG")'>
+        <img src="images/IMG_0541.JPG" alt="IMG_0541.JPG"" onclick='open_image_viewer("images/IMG_0541.JPG")'>
+        <img src="images/IMG_0542.JPG" alt="IMG_0542.JPG"" onclick='open_image_viewer("images/IMG_0542.JPG")'>
+        <img src="images/IMG_0543.JPG" alt="IMG_0543.JPG"" onclick='open_image_viewer("images/IMG_0543.JPG")'>
+        <img src="images/IMG_0544.JPG" alt="IMG_0544.JPG"" onclick='open_image_viewer("images/IMG_0544.JPG")'>
+        <img src="images/IMG_0545.JPG" alt="IMG_0545.JPG"" onclick='open_image_viewer("images/IMG_0545.JPG")'>
+        <img src="images/IMG_0547.JPG" alt="IMG_0547.JPG"" onclick='open_image_viewer("images/IMG_0547.JPG")'>
+        <img src="images/IMG_0551.JPG" alt="IMG_0551.JPG"" onclick='open_image_viewer("images/IMG_0551.JPG")'>
+        <img src="images/IMG_0552.JPG" alt="IMG_0552.JPG"" onclick='open_image_viewer("images/IMG_0552.JPG")'>
+        <img src="images/IMG_0553.JPG" alt="IMG_0553.JPG"" onclick='open_image_viewer("images/IMG_0553.JPG")'>
+        <img src="images/IMG_0554.JPG" alt="IMG_0554.JPG"" onclick='open_image_viewer("images/IMG_0554.JPG")'>
+        </div>
+
+        <div class="image-viewer" onclick="close_image_viewer()">
+            <span class="close-btn" onclick="close_image_viewer()">&times;</span>
+            <img id="viewer-image" class="viewed-image" src="" alt="Viewer Image" onclick="zoom_image(event)">
+            <div class="nav-arrows">
+                <div class="nav-arrow nav-arrow-left" onclick="navigate_image(event, -1)">&#8249;</div>
+                <div class="nav-arrow nav-arrow-right" onclick="navigate_image(event, 1)">&#8250;</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="core/script.js"></script>
+</body>
+
+<div class="github-link">
+    <a href="https://github.com/9551-Dev">
+    <img src="https://github.com/9551-Dev.png" alt="github icon">
+    </a>
+</div>
+
+</html>
